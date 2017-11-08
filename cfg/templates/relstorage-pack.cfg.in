@@ -1,0 +1,7 @@
+<relstorage>
+    blob-dir ${:blobstorage}
+    keep-history false
+    <postgresql>
+        dsn dbname='${:dbname}' host='${:dbhost}' user='${:dbuser}' password='${:dbpassword}'
+    </postgresql>
+</relstorage>

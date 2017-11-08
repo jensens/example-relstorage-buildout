@@ -1,0 +1,14 @@
+<relstorage source>
+    blob-dir ${:blobstorage}
+    keep-history false
+    <postgresql>
+        dsn dbname='${:dbname}' host='${:dbhost}' user='${:dbuser}' password='${:dbpassword}'
+    </postgresql>
+</relstorage>
+
+<blobstorage destination>
+  blob-dir ${:blobstorage-export}
+  <filestorage>
+    path ${:filestorage-export}
+  </filestorage>
+</blobstorage>
